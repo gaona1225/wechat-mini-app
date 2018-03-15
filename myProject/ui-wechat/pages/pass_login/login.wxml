@@ -1,0 +1,19 @@
+
+<view>
+  <view class="hd-logo"></view>
+  <view class="bd-content bd-form">
+    <form>
+      <view class="section ">
+        <input type="number" bindinput="phoneInput" maxlength="13" class="bd-phonenum" placeholder="请输入手机号（无需注册）" value="{{telnum}}" />
+        <label bindtap="clearValue" style="display:{{clearIcon}}"  class="input-clearValue"></label>
+      </view>
+      <view class="bd-loginbtn">
+        <button style="color:{{btnColor}}" bindtap="loginbtn" class="getcode-btn">获取手机号验证码</button>
+      </view>
+      <view>
+           <!--<label class="userprotocol">我已同意并阅读 <text class="user-agreement">百度用户协议</text></label>-->
+      </view>
+    </form>
+  </view>
+  <view style="display:{{toast?'block':''}}" class="bd-toast">{{toasttxt}}</view>
+</view>

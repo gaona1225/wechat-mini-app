@@ -1,0 +1,8 @@
+<view class="container">
+    <text class="test-index">{{text}}</text>
+</view>
+
+<view>
+    <input id="input1" value="{{value1}}" bindinput="bindInputValue1" />
+    <input id="input2" value="{{value2}}" bindinput="bindInputValue2" />
+</view>

@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var changeBtnColorFn=function(n,e,o){var t={};t[""+o]=n,n.length>0&&(t.clearIcon="block",t.btnColor="#fff"),0==n.length&&(t.clearIcon="none",t.btnColor=""),e.setData(t)};exports.changeBtnColorFn=changeBtnColorFn;

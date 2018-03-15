@@ -1,0 +1,1 @@
+"use strict";function addSpace(e){for(var t=3,r=e.split(" ").join(""),a="",c=0;c<r.length;c++)c==t-1||c==t+3||c==t+7||c==t+11||c==t+15?a=a+r.charAt(c)+" ":a+=r.charAt(c);return(" "==a.charAt(a.length-1)||isNaN(a.charAt(a.length-1)))&&(a=a.substring(0,a.length-1)),a}Object.defineProperty(exports,"__esModule",{value:!0}),exports.addTelSpace=addSpace;

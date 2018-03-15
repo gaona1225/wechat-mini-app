@@ -1,0 +1,129 @@
+/**index.wxss**/
+page{  
+  font-family: "微软雅黑";
+  font-size: 16px;
+}
+
+.passcontainer {
+  height: 100%;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.passimg-logo {
+  width:138px;
+  height: 46px;
+  margin: 0 auto;
+}
+.passsection {
+  margin-top: 30px;
+  text-align: left;
+  width: 100%;
+}
+.passsection-item{
+  margin: 0 15px;
+  border:1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 0 15px;
+}
+.passinput {
+  height: 44px;
+  width: 100%;
+}
+.passsection-btn {
+  margin: 0 15px;
+}
+.passbutton {
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #3c76ff;
+  background: #3c76ff;
+}
+.passtip-text {
+  display: block;
+  line-height: 25px;
+  text-align: center;
+}
+.passtip-msg {
+  color:#979797;
+  font-size: 15px;
+}
+.passtip-mobile {
+  font-size: 26px;
+  line-height: 35px;
+}
+.pass-notReg {
+  width: 75%;
+  margin: 0 auto;
+  background: #fff;
+  font-size: 14px;
+  padding: 10px;
+  color: #999;
+  border-radius: 2px;
+  text-align: left;
+  border: 1px solid #d5d4d4;
+}
+.pass-notReg::before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: center;
+  border-bottom: 8px solid #d5d4d4;
+  border-top: 0 none;
+  border-left: 8px dashed transparent;
+  border-right: 8px dashed transparent;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 88px;
+  margin-left: -11px;
+}
+.pass-notReg::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: center;
+  border-bottom: 7px solid #fff;
+  border-top: 0 none;
+  border-left: 7px dashed transparent;
+  border-right: 7px dashed transparent;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 89px;
+  margin-left: -10px;
+}
+.pass-vcode-wrapper {
+  display: -webkit-box;
+}
+.passsection-vcode {
+  display: -webkit-flex;
+  -webkit-box-flex: 1;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.passsection-vcode-btn {
+  margin-left: 0;
+}
+.passbutton-send {
+  background: #fff;
+}
+.pass-label {
+  width: 55px;
+}
+.pass-mt25 {
+  margin-top: 25px;
+}

@@ -1,0 +1,16 @@
+<!--pages/checkcode/checkcode.wxml-->
+<view class="bd-content">
+    <view class="hd-title">为了您的账号安全，请输入图中的验证码</view>
+    <view class="hd-imgcontent">
+    <image bindtap="changevcode" style="width:200rpx;height:96rpx;" src="{{imgurl}}"></image>
+    </view>
+    <view class="bd-input imgcode ">
+        <label class="smscode-txt">验证码</label>
+        <input type="text" bindinput="inputEvent" maxlength="4" class="imgcode-input" placeholder="请输入验证码" value="{{inputValue}}" />
+        <label bindtap="clearInput" class="input-clearValue" style="display:{{clearIcon}}"></label>
+    </view>
+    <view>
+    <button style="color:{{btnColor}}" bindtap="submitSmsCode" class="submit-btn">确定</button>
+  </view>
+  <view style="display:{{toast?'block':''}}" class="bd-toast">{{toasttxt}}</view>
+</view>

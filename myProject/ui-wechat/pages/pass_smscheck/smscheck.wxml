@@ -1,0 +1,18 @@
+<view class="bd">
+  <text class="bd-smsinfo">已发送验证码短信到</text>
+  <view>
+    <text class="bd-phonenum">{{telnum}}</text>
+  </view>
+  <view class="bd-content">
+    <view class="bd-input">
+      <label class="bd-codetxt">验证码</label>
+      <input type="number" maxlength="6" bindinput="smsCodeInput" class="bd-smscode" placeholder="请输入验证码" value="{{inputValue}}"/>
+      <label bindtap="clearInput" class="input-clearValue" style="display:{{clearIcon}}"></label>
+    </view>
+    <button bindtap="reSendCode" class="bd-sendcode {{flag?'resend-sms':''}}">{{textContent}}</button>
+  </view>
+  <view>
+    <button style="color:{{btnColor}}" bindtap="submitSmsCode" class="submit-btn">提交</button>
+  </view>
+  <view style="display:{{toast?'block':''}}" class="bd-toast">{{toasttxt}}</view>
+</view>

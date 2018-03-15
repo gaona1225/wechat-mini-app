@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var toastFn=function(t,e){var s=e?e:"";t.setData({toast:!0,toasttxt:s}),setTimeout(function(){t.setData({toast:!1,toasttxt:""})},2e3)};exports.toastFn=toastFn;

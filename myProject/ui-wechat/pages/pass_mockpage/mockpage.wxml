@@ -1,0 +1,13 @@
+<!--pages/pass_mockpage/mockpage.wxml-->
+<text>这是模拟产品线的页面，登录成功后会跳转到这里，在storage中会新种bduss，stoken,waimai_stoekn字段</text>
+
+<button type="default"  bindtap="jumpLogin" > 跳登录页 </button>
+
+<input type="idcard" placeholder="身份证输入键盘" />
+<input type="digit" placeholder="带小数点的数字键盘"/>
+<view class="section">
+  <input  placeholder="number" type="number" />
+</view>
+<view class="section">
+  <input  placeholder="text" type="text"  pattern="/^[a-z0-9]+$/i"/>
+</view>

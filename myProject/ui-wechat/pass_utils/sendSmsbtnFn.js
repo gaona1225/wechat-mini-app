@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var sendSmsBtn=function(t,e){var n=setInterval(function(){var s=e--;0!==s?t.setData({textContent:"重新发送("+s+")",flag:!0}):(t.setData({textContent:"重新获取验证码",flag:!1}),clearInterval(n))},1e3)};exports.sendSmsBtnFn=sendSmsBtn;

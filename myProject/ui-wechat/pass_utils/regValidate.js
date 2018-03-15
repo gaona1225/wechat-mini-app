@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var testUserName=function(e){return e&&/^.{6,14}$/.test(e)?!0:!1},testPassWord=function(e){return e&&/^.{6,14}$/.test(e)?!0:!1},regValidateFunc=function(e,t){return"username"==t?testUserName(e):"password"==t?testPassWord(e):void 0};exports.regValidateFunc=regValidateFunc;

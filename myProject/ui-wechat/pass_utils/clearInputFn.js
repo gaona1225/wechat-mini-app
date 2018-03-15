@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var clearInputFn=function(e,n){var t={};t[""+n]="",t.clearIcon="none",t.btnColor="",e.setData(t)};exports.clearInputFn=clearInputFn;

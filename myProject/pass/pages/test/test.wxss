@@ -1,0 +1,6 @@
+page{  
+  font-family: "微软雅黑";
+}
+input{
+  border:1px solid #ccc
+}

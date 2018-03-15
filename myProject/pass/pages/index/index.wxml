@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<!--<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>-->
+<block wx:if="{{urlParam.smsloginPage!='smsvcode'}}">
+<view class="passcontainer">
+  <view class="passimg">
+    <image src="{{passimg.logo}}" class="passimg-logo"></image>
+  </view>
+  <view class="passsection">
+    <view class="passsection-item">
+      <input type="number" placeholder="请输入手机号" auto-focus class="passinput" id="username" name="username" bindinput="listenerUsernameInput" maxlength="11"  />
+    </view>
+    <view class="passsection-btn pass-mt25">
+      <button type="default" class="passbutton" bindtap="getphoneStatus">获取手机验证码</button>
+    </view>
+  </view>
+</view>
+</block>
+<block wx:elif="{{urlParam.smsloginPage == 'smsvcode'}}">
+<view class="passcontainer">
+  <view class="passtip">
+    <text class="passtip-text passtip-msg">已发送验证码到</text>
+    <text class="passtip-text passtip-mobile">{{urlParam.mobile}}</text>
+    <view wx:if="{{urlParam.isreg == 1}}">
+      <text class="passtip-text pass-notReg">该帐号尚未注册，完成验证将自动注册百度帐号，并与此手机号绑定</text>
+    </view>
+  </view>
+  <view class="passsection">
+    <view class="pass-vcode-wrapper">
+      <view class="passsection-item passsection-vcode">
+        <input placeholder="请输入验证码" auto-focus class="passinput" />
+      </view>
+      <view class="passsection-btn passsection-vcode-btn">
+        <button type="default" class="passbutton-send">获取验证码</button>
+      </view>
+    </view>
+    <view class="passsection-btn pass-mt25">
+      <button type="default" class="passbutton" bindtap="submitLogin">提交</button>
+    </view>
+  </view>
+</view>
+</block>
